@@ -38,7 +38,7 @@ In this readme I'll explain how I combined the mentioned tutorials, the errors I
 - Jumper cables: https://www.amazon.com/REXQualis-120pcs-Breadboard-Arduino-Raspberry/dp/B072L1XMJR/ref=sr_1_2_sspa?keywords=female+male+jumper+wire&qid=1643220257&s=electronics&sprefix=female+male+jumper+%2Celectronics%2C542&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTkpaODlEQjhHTkhNJmVuY3J5cHRlZElkPUEwMDU0NjA5WkhFREFQV0IzTVNIJmVuY3J5cHRlZEFkSWQ9QTA2NTYzMDQyNUtER0JJWVhRNldCJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
 - **optional* - more thermal paper cause one is probably not enough: https://www.adafruit.com/product/599
   
-*note - first two supplies can be ignored, but then it won't be portable and will require 2 electricity outlets, one to power the printer, and one to power the Raspberry Pi.  
+**note - first two supplies can be ignored, but then it won't be portable and will require 2 electricity outlets, one to power the printer, and one to power the Raspberry Pi.*  
 Once we have all the supplies we can start our project!
   
   
@@ -53,4 +53,3 @@ First we need to figure out the **BAUD rate** of the thermal printer,
 it should be written on the **test page** that came with the printer  
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/031/836/large1024/raspberry_pi_components_test-baud.jpg?1461025182" alt="drawing" width="300"/>  
 (for the tutorial, we'll use a 19200 baud rate)
-  
