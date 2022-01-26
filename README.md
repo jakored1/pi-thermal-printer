@@ -14,6 +14,7 @@ To create this project I followed these tutorials:
 https://www.hackster.io/glowascii/using-a-thermal-printer-with-raspberry-pi-d74619  
 https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/connect-and-configure-printer  
 In this readme I'll explain how I combined the mentioned tutorials, the errors I ran into, how I solved them, hopefully allowing you to re-create this at home 😄  
+(some of the photos I used here belong to the websites/companies that host the above tutorials, I do not claim to own them)
 
 #### Image of the final product:
 ###### Top:
@@ -38,3 +39,16 @@ In this readme I'll explain how I combined the mentioned tutorials, the errors I
 - **optional* - more thermal paper cause one is probably not enough: https://www.adafruit.com/product/599
   
 Once we have all the supplies we can start our project!
+
+
+## Step 1: Connecting the printer
+After we setup our Raspberry Pi and connected it to a computer,  
+we need to connect the thermal printer to it and make sure it can print.  
+To connect the thermal printer to the Pi I recommend the first few minutes of this video:  
+https://youtu.be/r6KvQShmRJg?t=475  
+
+After we have the printer connected, we need to configure some stuff on the Pi.  
+First we need to figure out the **BAUD rate** of the thermal printer,  
+it should be written on the **test page** that came with the printer:  
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/031/836/large1024/raspberry_pi_components_test-baud.jpg?1461025182" alt="drawing" width="300"/>  
+(for the tutorial, we'll use a 19200 baud rate)
