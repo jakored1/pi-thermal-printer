@@ -40,7 +40,7 @@ In this readme I'll explain how I combined the mentioned tutorials, the errors I
   
 **note - first two supplies can be ignored, but then it won't be portable and will require 2 electricity outlets, one to power the printer, and one to power the Raspberry Pi*  
   
-Once we have all the supplies we can start our project!
+Once we have our the supplies we can start our project!
   
   
 ## Step 1: Connecting the printer
