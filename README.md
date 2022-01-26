@@ -55,3 +55,8 @@ it should be written on the **test page** that came with the printer
 (for the tutorial, we'll use a 19200 baud rate)
   
 Once our printer is connected and blinking, open a terminal on the Pi and enter the following commands  
+```sh
+stty -F /dev/serial0 19200  
+echo -e "This is a test.\\n\\n\\n" > /dev/serial0  
+```
+
