@@ -46,9 +46,8 @@ Once we have our the supplies we can start our project!
 ## Step 1: Connecting the printer
 After we setup our Raspberry Pi and connected it to a computer,  
 we need to connect the thermal printer to it and make sure it can print.  
-To connect the thermal printer to the Pi I recommend the first few minutes of this video:  
-https://youtu.be/r6KvQShmRJg?t=475  
-
+To connect the thermal printer to the Pi I recommend the first few minutes of [this video](https://youtu.be/r6KvQShmRJg?t=475)
+  
 After we have the printer connected, we need to configure some stuff on the Pi.  
 First we need to figure out the **BAUD rate** of the thermal printer,  
 it should be written on the **test page** that came with the printer  
@@ -56,4 +55,3 @@ it should be written on the **test page** that came with the printer
 (for the tutorial, we'll use a 19200 baud rate)
   
 Once our printer is connected and blinking, open a terminal on the Pi and enter the following commands  
-
