@@ -1,4 +1,4 @@
-# Thermal Printer Present
+# Raspberry Pi Thermal Printer
 ### _Fun Photo/Text Thermal Printer Present_
 
 ##### Reason:
