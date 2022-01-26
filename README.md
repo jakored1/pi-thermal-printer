@@ -28,11 +28,9 @@ In this readme I'll explain how I combined the mentioned tutorials, the errors I
 ###### Example Print:
 <img src="https://github.com/jakored1/pi-thermal-printer/blob/main/photos-for-readme/ImagePic.jpeg?raw=true" alt="drawing" width="300"/>
 
-### Supplies Needed:
+### Supplies:
 - Rechargeable battery to power the Raspberry Pi: https://www.adafruit.com/product/1566
 - Battery pack to power the thermal printer: https://www.adafruit.com/product/248
 - Thermal Printer starter pack: https://www.adafruit.com/product/600
 - Buttons (these are good cause they are pre-wired): https://www.amazon.com/Twidec-Normal-Momentary-Pre-soldered-PBS-110-XBK/dp/B07RPS2ZY3/ref=sr_1_4?keywords=momentary+pushbutton&qid=1584144566&rnid=2941120011&s=industrial&sr=1-4
 - **optional* - more thermal paper cause one is probably not enough: https://www.adafruit.com/product/599
-
-  
