@@ -43,20 +43,54 @@ In this readme I'll explain how I combined the mentioned tutorials, the errors I
 Once we have our the supplies we can start our project!
   
   
-## Step 1: Connecting the printer
+## Step 1: Setting up the printer
 After we setup our Raspberry Pi and connected it to a computer,  
 we need to connect the thermal printer to it and make sure it can print.  
 To connect the thermal printer to the Pi I recommend the first few minutes of [this video](https://youtu.be/r6KvQShmRJg?t=475)
   
-After we have the printer connected, we need to configure some stuff on the Pi.  
-First we need to figure out the **BAUD rate** of the thermal printer,  
-it should be written on the **test page** that came with the printer  
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/031/836/large1024/raspberry_pi_components_test-baud.jpg?1461025182" alt="drawing" width="300"/>  
-(for the tutorial, we'll use a 19200 baud rate)
+After we have the printer connected, we need to configure some stuff on the Pi,  
+To do this correctly follow [this tutorial](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/connect-and-configure-printer).  
+If you **run into an error** like this:  
+'CUPS Server Error: Success'
+<img src="https://i.redd.it/mm9jqkkg75611.jpg" alt="drawing" width="300"/>  
+Then try to **install a different Raspbian image on your Raspberry Pi:**  
+https://downloads.raspberrypi.org/raspbian/images/  
+I ran into this error and none of the solutions online worked for me,  
+so eventually I tried with another image and it worked!  
+(I used [this image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/2019-04-08-raspbian-stretch.zip))  
   
-Once our printer is connected and blinking, open a terminal on the Pi and enter the following commands  
-```sh
-stty -F /dev/serial0 19200  
-echo -e "This is a test.\\n\\n\\n" > /dev/serial0  
-```
-
+Once you finished the above tutorial and the printer prints properly we can move on to connecting the buttons  
+If printing the image comes out with gibberish don't worry about it,  
+that happend to me but through the code (later on) photos were printing just fine  
+  
+## Step 2: Connecting the buttons  
+To connect the buttons lets take a look at the [Raspberry Pi GPIO pinout](https://pinout.xyz/)  
+We need to connect one of the buttons wires to a GPIO Pin (any of them) and the other wire to a Ground Pin (any of them).  
+Do this for all the buttons you want to use, and remmember the number of the GPIO Pin you connected the button to as we'll need it later on  
+  
+Use the Jumper Cables we purchased to connect everything  
+  
+To test the buttons create a python file containing this code:  
+```python
+#!/bin/python 
+import RPi.GPIO as GPIO  
+GPIO.setmode(GPIO.BCM)  
+GPIO.setup(17, GPIO.IN, pull_up_down = GPIO.PUD_UP) # Replace 17 with the GPIO Pin you connected the button to  
+  
+def button1(channel):
+    print("Button pressed")
+  
+def main():  
+    # Execute functions when buttons are pressed
+    GPIO.add_event_detect(17, GPIO.FALLING, callback = button1, bouncetime = 2000)
+    # Waiting
+    while 1:
+        time.sleep(1)
+if __name__ == "__main__":
+    main()
+```  
+It should print when you press the button,  
+If not, make sure both of the buttons wires are properly connected to the Pi  
+  
+## Step 3: Code!  
+After we setup all the buttons and printer, lets
