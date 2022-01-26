@@ -13,5 +13,11 @@ The project will also be able to work without any electricity outlet, so the box
 ###### Back:
 <img src="https://github.com/jakored1/pi-thermal-printer/blob/main/photos-for-readme/BackPic.jpeg?raw=true" alt="drawing" width="300"/>
 
+###### Inside:
+<img src="https://github.com/jakored1/pi-thermal-printer/blob/main/photos-for-readme/InteriorPic.jpeg?raw=true" alt="drawing" width="300"/>
+
+###### Example Print:
+<img src="https://github.com/jakored1/pi-thermal-printer/blob/main/photos-for-readme/ImagePic.jpeg?raw=true" alt="drawing" width="300"/>
+
 ### Supplies used:
 - 
