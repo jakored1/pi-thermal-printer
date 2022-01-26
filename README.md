@@ -51,7 +51,7 @@ To connect the thermal printer to the Pi I recommend the first few minutes of [t
 After we have the printer connected, we need to configure some stuff on the Pi,  
 To do this correctly follow [this tutorial](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/connect-and-configure-printer).  
 If you **run into an error** like this:  
-'CUPS Server Error: Success'
+'CUPS Server Error: Success'  
 <img src="https://i.redd.it/mm9jqkkg75611.jpg" alt="drawing" width="300"/>  
 Then try to **install a different Raspbian image on your Raspberry Pi:**  
 https://downloads.raspberrypi.org/raspbian/images/  
