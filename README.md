@@ -112,12 +112,12 @@ mkdir /home/pi/Desktop/final/5
 After that, copy the code.py file into the 'final' directory.  
 It should look something like this:  
 +-- /home/pi/Desktop/final/  
-      +-- 1/  
-      +-- 2/  
-      +-- 3/  
-      +-- 4/  
-      +-- 5/  
-      +-- code.py  
++--+-- 1/  
++--+-- 2/  
++--+-- 3/  
++--+-- 4/  
++--+-- 5/  
++--+-- code.py  
 Next!  
 Fill the folders 1 to 5 with .jpeg and/or .txt files!  
 Before we can run the script we need to install the required python packages  
