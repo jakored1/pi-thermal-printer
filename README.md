@@ -33,4 +33,6 @@ In this readme I'll explain how I combined the mentioned tutorials, the errors I
 - Battery pack to power the thermal printer: https://www.adafruit.com/product/248
 - Thermal Printer starter pack: https://www.adafruit.com/product/600
 - Buttons (these are good cause they are pre-wired): https://www.amazon.com/Twidec-Normal-Momentary-Pre-soldered-PBS-110-XBK/dp/B07RPS2ZY3/ref=sr_1_4?keywords=momentary+pushbutton&qid=1584144566&rnid=2941120011&s=industrial&sr=1-4
+- Raspberry Pi (can probably use any model, in this project I used a model 2 I got in 2016): https://www.raspberrypi.com/products/raspberry-pi-4-model-b/
+- Jumper cables: https://www.amazon.com/REXQualis-120pcs-Breadboard-Arduino-Raspberry/dp/B072L1XMJR/ref=sr_1_2_sspa?keywords=female+male+jumper+wire&qid=1643220257&s=electronics&sprefix=female+male+jumper+%2Celectronics%2C542&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTkpaODlEQjhHTkhNJmVuY3J5cHRlZElkPUEwMDU0NjA5WkhFREFQV0IzTVNIJmVuY3J5cHRlZEFkSWQ9QTA2NTYzMDQyNUtER0JJWVhRNldCJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
 - **optional* - more thermal paper cause one is probably not enough: https://www.adafruit.com/product/599
