@@ -59,7 +59,7 @@ I ran into this error and none of the solutions online worked for me,
 so eventually I tried with another image and it worked!  
 (I used [this image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/2019-04-08-raspbian-stretch.zip))  
   
-Once you finished the above tutorial and the printer prints properly we can move on to connecting the buttons  
+Once you finished the above tutorial and the printer prints properly we can move on to connecting the buttons.  
 If printing the image comes out with gibberish don't worry about it,  
 that happend to me but through the code (later on) photos were printing just fine  
   
@@ -93,4 +93,50 @@ It should print when you press the button,
 If not, make sure both of the buttons wires are properly connected to the Pi  
   
 ## Step 3: Code!  
-After we setup all the buttons and printer, lets
+After we setup all the buttons and printer, lets write our code.  
+The code.py file I placed in this project is fit for my needs so I will explain how to use it.  
+If you're using less buttons then edit the code accordingly 😀  
+
+First, create the following directory  
+```sh
+mkdir /home/pi/Desktop/final/
+```  
+Then create 5 more directories each named a number from 1 to 5 inside the 'final' directory  
+```sh
+mkdir /home/pi/Desktop/final/1
+mkdir /home/pi/Desktop/final/2
+mkdir /home/pi/Desktop/final/3
+mkdir /home/pi/Desktop/final/4
+mkdir /home/pi/Desktop/final/5
+```  
+After that, copy the code.py file into the 'final' directory.  
+It should look something like this:  
++-- /home/pi/Desktop/final/  
+    +-- 1/  
+    +-- 2/  
+    +-- 3/  
+    +-- 4/  
+    +-- 5/  
+    +-- code.py  
+Next!  
+Fill the folders 1 to 5 with .jpeg and/or .txt files!  
+Before we can run the script we need to install the required python packages  
+```sh
+python3 -m pip install pillow
+python3 -m pip install thermal-printer
+```  
+(I forgot the exact name of the 'thermal-printer' package, it might be 'thermalprinter' instead)  
+  
+After all folders have at least one file in them (jpeg or txt), and we installed our packages,  
+Run the script!  
+```sh
+python3 /home/pi/Desktop/final/code.py
+```  
+  
+If everything went smoothly, when you press a button it should print one of the contents from the folder correspinding to the buttons number.  
+Be patient! printing photos takes the printer some time, if you press another button while it's still printing the image will come out bad  
+  
+Finally,  
+To make this into a portable box as shown in the above photos you will have to create a service that runs the code.py script when the Raspberry Pi starts up, buy a box, and pack it however you want!  
+  
+Enjoy!
