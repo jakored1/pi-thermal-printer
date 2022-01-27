@@ -14,7 +14,6 @@ To create this project I followed these tutorials:
 https://www.hackster.io/glowascii/using-a-thermal-printer-with-raspberry-pi-d74619  
 https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/connect-and-configure-printer  
 In this readme I'll explain how I combined the mentioned tutorials, the errors I ran into, how I solved them, hopefully allowing you to re-create this at home 😄  
-(some of the photos I used here belong to the websites/companies that host the above tutorials, I do not claim to own them)
 
 #### Image of the final product:
 ###### Top:
